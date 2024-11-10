@@ -75,18 +75,18 @@ h2 {
     margin-bottom: 20px;
     border-radius: 8px;
     box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.1);
-    text-align: left; /* Align text to the left */
+    text-align: left;
 }
 
 .job h3 {
-    color: #00aaff; /* Blue color for job title */
+    color: #00aaff;
     font-size: 1.5em;
     margin-bottom: 5px;
 }
 
 .job p.location {
     font-style: italic;
-    color: #00aaff; /* Blue color for location */
+    color: #00aaff;
     margin-bottom: 10px;
     font-size: 1em;
 }
@@ -121,7 +121,7 @@ h2 {
     justify-content: space-between;
     gap: 20px;
     margin-top: 20px;
-    flex-wrap: wrap; /* Allows wrap for smaller screens */
+    flex-wrap: wrap;
 }
 
 .skills-columns div {
@@ -129,8 +129,8 @@ h2 {
     background-color: #333;
     border-radius: 8px;
     box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.1);
-    flex: 1 1 30%; /* Flexible width to fit in a three-column layout */
-    max-width: 300px; /* Keeps columns at a reasonable width */
+    flex: 1 1 30%;
+    max-width: 300px;
     color: #ddd;
 }
 
@@ -183,24 +183,20 @@ h2 {
     margin-top: 40px;
 }
 
-/* Certification styling */
-.certification {
+/* Certification grid and individual box styling */
+.certification-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.certification-box {
     background-color: #333;
     padding: 15px;
-    margin-bottom: 15px;
     border-radius: 8px;
     box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.1);
-    text-align: left;
-}
-
-.certification h3 {
+    text-align: center;
     color: #00aaff;
-    font-size: 1.3em;
-    margin-bottom: 8px;
-}
-
-.certification p {
-    color: #ccc;
-    font-size: 1em;
-    line-height: 1.5;
+    font-weight: bold;
 }
