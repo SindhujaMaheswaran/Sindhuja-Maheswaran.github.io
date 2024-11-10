@@ -59,8 +59,8 @@ body {
 
 /* Main content styling */
 .main-content {
-    width: 90%;
-    max-width: 800px;
+    width: 100%;
+    max-width: 900px; /* Increased max-width for wider content */
     padding: 20px;
     background-color: #222; /* Darker background for content area */
     color: #fff; /* White text for readability */
