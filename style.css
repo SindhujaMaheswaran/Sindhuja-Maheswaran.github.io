@@ -10,15 +10,13 @@ body {
     font-family: Arial, sans-serif;
     background-color: #000; /* Black background */
     color: #fff; /* White text for contrast */
-    display: flex;
-    flex-direction: column;
     min-height: 100vh;
 }
 
 /* Header (Navigation Bar) */
 .navbar {
     width: 100%;
-    background-color: #333; /* Dark gray for slight contrast */
+    background-color: #333; /* Dark gray for contrast */
     padding: 10px 0;
     text-align: center;
     position: fixed;
@@ -52,8 +50,8 @@ body {
     min-height: 100vh; /* Full viewport height */
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Centers content vertically */
-    align-items: center; /* Centers content horizontally */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
     text-align: center;
     padding: 20px;
 }
@@ -69,13 +67,19 @@ body {
 
 /* Headline and Tagline Styling */
 .headline {
-    font-size: 2em;
+    font-size: 2.5em;
     color: #00aaff; /* Light blue for contrast */
     margin: 10px 0;
 }
 
-.tagline {
+.sub-headline {
     font-size: 1.2em;
+    color: #bbb; /* Light gray for contrast */
+    margin-bottom: 15px;
+}
+
+.tagline {
+    font-size: 1.1em;
     color: #ccc;
     margin-top: 10px;
 }
@@ -93,7 +97,7 @@ body {
     margin: 0 10px;
     cursor: pointer;
     transition: transform 0.3s;
-    filter: brightness(0) invert(1); /* Invert icons for better contrast */
+    filter: brightness(0) invert(1); /* Invert icons for contrast */
 }
 
 .contact-links img:hover {
