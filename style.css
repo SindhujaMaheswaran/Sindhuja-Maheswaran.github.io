@@ -1,1 +1,88 @@
+/* Reset styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f4f4f9;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Profile Section with animations */
+.profile-section {
+    text-align: center;
+    margin-bottom: 30px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.headline {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #0073e6;
+    animation: slideIn 2s ease-out forwards;
+    opacity: 0;
+}
+
+.tagline {
+    font-size: 1.1em;
+    color: #555;
+    margin-top: 5px;
+    animation: fadeInText 3s ease-in forwards;
+    opacity: 0;
+}
+
+/* Animated Summary Section */
+.summary {
+    width: 90%;
+    max-width: 800px;
+    background: white;
+    margin: 10px 0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    animation: zoomIn 1.5s ease-in;
+}
+
+/* Keyframes for Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateY(-20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes fadeInText {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes zoomIn {
+    from { transform: scale(0.9); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+/* Footer */
+.footer {
+    margin-top: 20px;
+    text-align: center;
+    color: #888;
+}
 
