@@ -4,7 +4,119 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects - Sindhuja Maheswaran</title>
-    <link rel="stylesheet" href="style.css"> <!-- Link to your CSS file for styling -->
+    <style>
+        /* Reset styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Global body styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* Navbar styling */
+        .navbar {
+            width: 100%;
+            background-color: #333;
+            padding: 10px 0;
+            text-align: center;
+            position: fixed;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        .navbar ul li {
+            margin: 0 15px;
+        }
+
+        .navbar ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .main-content {
+            margin-top: 80px;
+            width: 90%;
+            max-width: 1200px;
+            padding: 20px;
+            background-color: #222;
+            color: #fff;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.1);
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 2em;
+            color: #00aaff;
+            margin-bottom: 20px;
+        }
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .project {
+            background-color: #333;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.2);
+            text-align: left;
+            color: #fff;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .project:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 6px 12px rgba(255, 255, 255, 0.3);
+        }
+
+        .project img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .project h3 {
+            color: #00aaff;
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .project p {
+            color: #ccc;
+            margin-bottom: 10px;
+        }
+
+        .footer {
+            width: 100%;
+            background-color: #333;
+            color: #888;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 40px;
+        }
+    </style>
 </head>
 <body>
 
@@ -25,6 +137,7 @@
         <div class="project-grid">
             <!-- Project 1 -->
             <div class="project">
+                <img src="Crime_Classification_Los_Angeles_Project.jpg" alt="Crime Classification Project">
                 <h3>Crime Classification Based on Geographical Area</h3>
                 <p><strong>Course:</strong> Data Mining</p>
                 <p><strong>Technologies:</strong> Python, Sklearn, Seaborn, TensorFlow</p>
@@ -34,6 +147,7 @@
 
             <!-- Project 2 -->
             <div class="project">
+                <img src="Economic.png" alt="Natural Disasters and Economic Impact">
                 <h3>Visual Exploration of Natural Disasters and Economic Impact in the USA</h3>
                 <p><strong>Course:</strong> Visual Analytic Dashboard</p>
                 <p><strong>Technologies:</strong> Tableau, Excel</p>
@@ -43,6 +157,7 @@
 
             <!-- Project 3 -->
             <div class="project">
+                <img src="Zillow_House_Price_Analysis.jpg" alt="Zillow House Price Prediction">
                 <h3>Zillow House Price Prediction</h3>
                 <p><strong>Course:</strong> Big Data Analytics</p>
                 <p><strong>Technologies:</strong> Python, PySpark, ARIMA, KNN, CNN</p>
