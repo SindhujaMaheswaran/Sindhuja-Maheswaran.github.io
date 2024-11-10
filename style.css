@@ -136,10 +136,6 @@ h2 {
     color: #ddd;
 }
 
-.skills-columns ul:not(:last-child) {
-    border-right: 2px solid #444; /* Divider line between columns */
-}
-
 /* Different colors for each skill category */
 .skills-columns ul:nth-child(1) {
     background-color: #1a1a1a;
@@ -214,4 +210,36 @@ h2 {
     color: #ccc;
     font-size: 1em;
     line-height: 1.5;
+}
+
+/* Job experience styling */
+.job {
+    text-align: left;
+    background-color: #333;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+.job h3 {
+    color: #00aaff;
+    font-size: 1.5em;
+    margin-bottom: 5px;
+}
+
+.job p {
+    font-size: 1.1em;
+    color: #ccc;
+    margin-bottom: 10px;
+}
+
+.job .job-details p {
+    color: #ddd;
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.job .job-details p strong {
+    color: #00aaff;
 }
