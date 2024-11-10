@@ -21,7 +21,6 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
         }
 
         /* Header (Navigation Bar) */
@@ -65,7 +64,6 @@
             align-items: center; /* Center content horizontally */
             text-align: center;
             padding: 20px;
-            animation: fadeIn 2s ease-in-out; /* Fade-in animation */
         }
 
         /* Profile Image */
@@ -82,36 +80,31 @@
             font-size: 2.5em;
             color: #00aaff; /* Light blue for contrast */
             margin: 10px 0;
-            animation: slideIn 1.5s ease-out forwards; /* Slide-in animation */
-        }
-
-        .sub-headline {
-            font-size: 1.2em;
-            color: #bbb; /* Light gray for contrast */
-            margin-bottom: 15px;
-            animation: slideIn 1.5s ease-out forwards; /* Slide-in animation */
+            opacity: 0;
+            animation: fadeInSlide 2s forwards; /* Combined fade and slide animation */
         }
 
         .tagline {
-            font-size: 1.1em;
+            font-size: 1.2em;
             color: #ccc;
             margin-top: 10px;
-            animation: fadeInText 2.5s ease-in forwards; /* Fade-in animation */
+            opacity: 0;
+            animation: fadeIn 3s forwards; /* Simple fade-in animation */
         }
 
         /* Animations */
-        @keyframes slideIn {
+        @keyframes fadeInSlide {
             from {
-                transform: translateY(-20px);
                 opacity: 0;
+                transform: translateY(-20px);
             }
             to {
-                transform: translateY(0);
                 opacity: 1;
+                transform: translateY(0);
             }
         }
 
-        @keyframes fadeInText {
+        @keyframes fadeIn {
             from {
                 opacity: 0;
             }
@@ -127,7 +120,6 @@
             position: fixed;
             bottom: 20px;
             width: 100%;
-            padding-bottom: 10px;
         }
 
         .contact-links img {
@@ -141,16 +133,6 @@
 
         .contact-links img:hover {
             transform: scale(1.1);
-        }
-
-        /* Footer styling */
-        .footer {
-            width: 100%;
-            background-color: #333;
-            color: #888;
-            text-align: center;
-            padding: 15px 0;
-            position: relative;
         }
     </style>
 </head>
@@ -172,12 +154,12 @@
         <div class="profile">
             <img src="Profile.jpeg" alt="Sindhuja Maheswaran" class="profile-img">
             <h1 class="headline">Sindhuja Maheswaran</h1>
-            <p class="sub-headline">Master of Applied Data Science | Data Analyst | Machine Learning Enthusiast</p>
+            <p class="tagline">Master of Applied Data Science | Data Analyst | Machine Learning Enthusiast</p>
             <p class="tagline">Passionate about transforming data into actionable insights to drive impactful decisions.</p>
         </div>
     </main>
 
-    <!-- Footer with Contact Icons -->
+    <!-- Contact Links Fixed at Bottom -->
     <div class="contact-links">
         <a href="mailto:smaheswa@syr.edu"><img src="gmail.jpg" alt="Gmail"></a>
         <a href="https://outlook.live.com" target="_blank"><img src="outlook.jpg" alt="Outlook"></a>
