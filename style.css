@@ -1,4 +1,3 @@
-
 /* Reset styling */
 * {
     margin: 0;
@@ -69,24 +68,82 @@ h2 {
     margin-bottom: 20px;
 }
 
-/* Project grid layout */
+/* Section Headers */
+h3 {
+    color: #00aaff;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+/* Education and Skills sections alignment */
+.education, .skills-summary {
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* Education Styling */
+.education h3, .skills-summary h3 {
+    font-size: 1.8em;
+    color: #00aaff;
+    margin-bottom: 20px;
+}
+
+.education ul, .skills-columns {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+.education ul li {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #ddd;
+}
+
+/* Skills Columns Layout */
+.skills-columns {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.skills-columns div {
+    padding: 15px;
+    background-color: #333;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.1);
+    width: 30%;
+}
+
+.skills-columns div:not(:last-child) {
+    border-right: 2px solid #444; /* Divider line between columns */
+}
+
+.skills-columns div h4 {
+    color: #00ffcc;
+    margin-bottom: 10px;
+}
+
+.skills-columns div p {
+    color: #ccc;
+    line-height: 1.6;
+}
+
+/* Project Grid Styling */
 .project-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Responsive columns */
-    gap: 20px; /* Space between projects */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
     text-align: left;
 }
 
-/* Project card styling */
 .project {
     background-color: #333;
     color: #fff;
     border-radius: 8px;
     padding: 20px;
     box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.1);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 }
 
 .project h3 {
@@ -96,94 +153,7 @@ h2 {
 }
 
 .project p {
-    margin-bottom: 10px;
     color: #ccc;
-}
-
-.project a {
-    color: #00aaff;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-.project a:hover {
-    color: #ddd;
-}
-
-/* Skills Summary Section */
-.skills-summary h2 {
-    font-size: 1.8em;
-    color: #00aaff;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-/* Three-column layout for skills */
-.skills-columns {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    margin-top: 20px;
-    flex-wrap: wrap; /* Allows wrap for smaller screens */
-}
-
-.skills-columns ul {
-    padding: 15px;
-    background-color: #333;
-    border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.1);
-    flex: 1 1 30%; /* Flexible width to fit in a three-column layout */
-    max-width: 300px; /* Keeps columns at a reasonable width */
-    color: #ddd;
-}
-
-.skills-columns ul:not(:last-child) {
-    border-right: 2px solid #444; /* Divider line between columns */
-}
-
-/* Different colors for each skill category */
-.skills-columns ul:nth-child(1) {
-    background-color: #1a1a1a;
-    color: #00ffcc;
-}
-
-.skills-columns ul:nth-child(2) {
-    background-color: #2b2b2b;
-    color: #ffcc00;
-}
-
-.skills-columns ul:nth-child(3) {
-    background-color: #3b3b3b;
-    color: #ff6699;
-}
-
-/* Skill items styling */
-.skills-columns ul li {
-    margin-bottom: 10px;
-    line-height: 1.5;
-}
-
-/* Education Section Styling */
-.education {
-    margin-top: 30px;
-    text-align: center;
-}
-
-.education h3 {
-    font-size: 1.8em;
-    color: #00aaff;
-    margin-bottom: 10px;
-}
-
-.education ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.education ul li {
-    font-size: 1.1em;
-    margin-bottom: 10px;
-    color: #ddd;
 }
 
 /* Footer styling */
