@@ -7,35 +7,39 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navigation Menu -->
+
+    <!-- Fixed Navigation Menu -->
     <nav class="navbar">
         <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#certifications">Certifications</a></li>
             <li><a href="#experience">Experience</a></li>
             <li><a href="#projects">Projects</a></li>
-            <li><a href="#skills">Technologies & Skills</a></li>
+            <li><a href="#skills">Skills</a></li>
         </ul>
     </nav>
 
-    <!-- Home Section -->
+    <!-- Home Section with Animated Summary and Tagline -->
     <section id="home" class="section">
         <div class="profile">
-            <img src="Profile.jpeg" alt="Sindhuja Maheswaran" class="Profile-img">
+            <img src="Profile.jpeg" alt="Sindhuja Maheswaran" class="profile-img">
             <h1>Sindhuja Maheswaran</h1>
             <p class="headline">Master of Applied Data Science | Data Analyst | Machine Learning Enthusiast</p>
             <p class="tagline">Passionate about transforming data into actionable insights to drive impactful decisions.</p>
-            <p class="contact">
-                <a href="mailto:smaheswa@syr.edu">smaheswa@syr.edu</a> |
-                <a href="https://www.linkedin.com/in/sindhuja-maheswaran" target="_blank">LinkedIn</a> |
-                <a href="https://github.com/SindhujaMaheswaran" target="_blank">GitHub</a>
-            </p>
+        </div>
+        
+        <!-- Contact Icons -->
+        <div class="contact-links">
+            <a href="mailto:smaheswa@syr.edu"><img src="gmail.jpg" alt="Email"></a>
+            <a href="https://www.linkedin.com/in/sindhuja-maheswaran" target="_blank"><img src="LinkedIn.jpg" alt="LinkedIn"></a>
+            <a href="https://github.com/SindhujaMaheswaran" target="_blank"><img src="github.jpg" alt="GitHub"></a>
         </div>
     </section>
 
     <!-- Certifications Section -->
     <section id="certifications" class="section">
         <h2>Certifications and Badges</h2>
+        <img src="Certification.jpg" alt="Certifications" class="section-img">
         <ul>
             <li>Data Science Hands-On Experience</li>
             <li>Developing SQL Databases</li>
@@ -48,6 +52,7 @@
     <!-- Experience Section -->
     <section id="experience" class="section">
         <h2>Work Experience</h2>
+        <img src="Mobile.jpg" alt="Experience" class="section-img">
         <div class="job">
             <h3>Data Science Researcher</h3>
             <p>Nexis Student Lab Technology, Syracuse University (09/2024 - Present)</p>
@@ -69,24 +74,25 @@
     <!-- Projects Section -->
     <section id="projects" class="section">
         <h2>Project Work</h2>
+        <img src="project.jpg" alt="Projects" class="section-img">
         <div class="project">
-            <img src="images/asl_project.jpg" alt="ASL Image Classification" class="project-img">
             <h3>ASL Image Classification System</h3>
-            <p>Achieved 92% accuracy for ASL recognition using CNN and OpenCV.</p>
+            <p>Achieved 92% accuracy for ASL recognition using CNN, OpenCV, and Scikit-Learn.</p>
         </div>
         <div class="project">
-            <img src="images/summarization_project.jpg" alt="Text Summarization API" class="project-img">
             <h3>Text Summarization API</h3>
             <p>Developed a Flask-based API using Hugging Face’s BART model for text summarization.</p>
         </div>
     </section>
 
-    <!-- Technologies Section -->
+    <!-- Skills Section -->
     <section id="skills" class="section">
         <h2>Technologies & How They Enhance My Skills</h2>
-        <p>Technologies like Python, R, SQL, and cloud services such as AWS and Azure have been instrumental in my journey as a data professional. They enable me to perform data analysis, machine learning, and data engineering tasks, enhancing my ability to deliver data-driven insights and support strategic decisions.</p>
+        <img src="skills.jpg" alt="Skills" class="section-img">
+        <p>Technologies like Python, R, SQL, and cloud services (AWS, Azure) have been instrumental in my journey as a data professional, enhancing my ability to deliver data-driven insights and strategic support.</p>
     </section>
 
+    <!-- Footer -->
     <footer class="footer">
         <p>© 2024 Sindhuja Maheswaran | Built with HTML & CSS</p>
     </footer>
