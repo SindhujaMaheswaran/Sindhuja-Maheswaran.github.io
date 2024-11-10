@@ -12,15 +12,13 @@ body {
     color: #fff; /* White text for contrast */
     display: flex;
     flex-direction: column;
-    align-items: center;
     min-height: 100vh;
-    overflow-x: hidden;
 }
 
 /* Header (Navigation Bar) */
 .navbar {
     width: 100%;
-    background-color: #333; /* Dark gray for slight contrast against black background */
+    background-color: #333; /* Dark gray for slight contrast */
     padding: 10px 0;
     text-align: center;
     position: fixed;
@@ -49,47 +47,37 @@ body {
     color: #ccc;
 }
 
-/* Main content sections */
+/* Full-page Main Content */
 .main-content {
-    width: 90%;
-    max-width: 800px;
-    background: #222; /* Dark gray background for content sections */
-    margin-top: 80px; /* Space for the fixed navbar */
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
-    text-align: center;
-    min-height: calc(100vh - 80px); /* Full viewport height minus navbar */
+    min-height: 100vh; /* Full viewport height */
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: center; /* Centers content vertically */
+    align-items: center; /* Centers content horizontally */
+    text-align: center;
+    padding: 20px;
 }
 
 /* Profile Image */
 .profile-img {
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.3); /* Light shadow */
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
 }
 
-/* Summary and Tagline */
+/* Headline and Tagline Styling */
 .headline {
-    font-size: 1.5em;
+    font-size: 2em;
     color: #00aaff; /* Light blue for contrast */
-    text-align: center;
-    margin-top: 10px;
+    margin: 10px 0;
 }
 
 .tagline {
-    font-size: 1.1em;
-    color: #ccc; /* Lighter gray for contrast */
-    text-align: center;
-    margin-top: 5px;
+    font-size: 1.2em;
+    color: #ccc;
+    margin-top: 10px;
 }
 
 /* Contact links styling */
@@ -100,12 +88,12 @@ body {
 }
 
 .contact-links img {
-    width: 25px;
-    height: 25px;
+    width: 30px;
+    height: 30px;
     margin: 0 10px;
     cursor: pointer;
     transition: transform 0.3s;
-    filter: brightness(0) invert(1); /* Invert icons for better contrast on black background */
+    filter: brightness(0) invert(1); /* Invert icons for better contrast */
 }
 
 .contact-links img:hover {
@@ -119,22 +107,5 @@ body {
     color: #888;
     text-align: center;
     padding: 15px 0;
-    margin-top: 20px;
     position: relative;
-}
-
-/* Responsive Design */
-@media (max-width: 600px) {
-    .navbar ul {
-        flex-direction: column;
-        padding: 0;
-    }
-    
-    .navbar ul li {
-        margin: 10px 0;
-    }
-    
-    .main-content {
-        width: 95%;
-    }
 }
