@@ -68,140 +68,71 @@ h2 {
     margin-bottom: 20px;
 }
 
-/* Project grid layout */
-.project-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Two rows of three projects */
-    gap: 20px;
-    text-align: left;
+/* Certification Section */
+.certification-section h2 {
+    font-size: 1.8em;
+    color: #00aaff;
+    margin-bottom: 20px;
 }
 
-/* Project card styling */
-.project {
+/* Individual Certification Box */
+.certification-box {
+    padding: 15px;
+    margin: 10px 0;
     background-color: #333;
-    color: #fff;
+    color: #00aaff; /* Blue text for each certification */
     border-radius: 8px;
-    padding: 20px;
     box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.1);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.project h3 {
-    color: #00aaff;
-    font-size: 1.5em;
-    margin-bottom: 10px;
-}
-
-.project p {
-    margin-bottom: 10px;
-    color: #ccc;
-}
-
-.project a {
-    color: #00aaff;
     font-weight: bold;
-    text-decoration: none;
+    text-align: center;
 }
 
-.project a:hover {
-    color: #ddd;
-}
-
-/* Skills Summary Section */
-.skills-summary h2 {
+/* Skills Section */
+.skills-section h2 {
     font-size: 1.8em;
     color: #00aaff;
     text-align: center;
     margin-bottom: 20px;
 }
 
-/* Three-column layout for skills */
-.skills-columns {
+/* Skills grid layout */
+.skills-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Three columns for skills */
-    gap: 20px;
-    margin-top: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Responsive columns */
+    gap: 20px; /* Space between skill boxes */
 }
 
-.skill {
+/* Individual Skill Box */
+.skill-box {
     padding: 15px;
     background-color: #333;
     border-radius: 8px;
     box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.1);
     color: #ddd;
-}
-
-/* Education Section Styling */
-.education {
-    margin-top: 30px;
     text-align: center;
 }
 
-.education h3 {
-    font-size: 1.8em;
+/* Experience and Projects (no changes) */
+.experience, .projects {
+    margin-top: 20px;
+}
+
+.job, .project {
+    background-color: #333;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.1);
+    margin-bottom: 20px;
+}
+
+.job h3, .project h3 {
     color: #00aaff;
+    font-size: 1.5em;
     margin-bottom: 10px;
 }
 
-.education ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.education ul li {
-    font-size: 1.1em;
-    margin-bottom: 10px;
-    color: #ddd;
-}
-
-/* Certifications Section */
-.certification-list {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-top: 20px;
-}
-
-.certification-list div {
-    padding: 15px;
-    background-color: #333;
-    color: #00aaff; /* Light blue text */
-    text-align: center;
-    border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.1);
-    font-weight: bold;
-}
-
-/* Experience Section */
-.experience {
-    display: grid;
-    grid-template-columns: 1fr; /* Single-column layout for smaller screens */
-    gap: 20px;
-    margin-top: 20px;
-}
-
-.job {
-    background-color: #333;
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.1);
-    display: flex;
-    flex-direction: column;
-}
-
-.job h3 {
-    color: #00aaff; /* Position title in blue */
-    text-align: left;
-    margin-bottom: 5px;
-}
-
-.job p {
-    color: #888; /* Location and dates in a lighter shade */
-    font-weight: bold;
-    margin-bottom: 10px;
-    text-align: left;
+.job p, .project p {
+    color: #888; /* Light gray text */
 }
 
 /* Footer styling */
@@ -212,13 +143,4 @@ h2 {
     text-align: center;
     padding: 15px 0;
     margin-top: 40px;
-}
-
-/* General Section Styling */
-.section-container {
-    padding: 20px;
-    background-color: #222;
-    border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.1);
-    margin-bottom: 30px;
 }
