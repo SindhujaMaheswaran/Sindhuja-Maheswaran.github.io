@@ -37,7 +37,7 @@
 
 /* Forcing very small image size */
 .project-img {
-    width: 30px !important; /* Fixed width to 30px */
+    width: 60px !important; /* Fixed width to 30px */
     height: 30px !important; /* Fixed height to 30px */
     object-fit: cover; /* Maintain aspect ratio */
     margin-bottom: 10px;
