@@ -26,18 +26,19 @@ body {
     width: 100%;
     background-color: #333; /* Dark gray for contrast */
     padding: 10px 0;
-    text-align: center;
     position: fixed;
     top: 0;
     z-index: 1000;
+    display: flex;
+    justify-content: center; /* Center the navbar content */
 }
 
 .navbar ul {
     list-style-type: none;
     display: flex;
-    justify-content: center; /* Center-align the list items */
-    padding: 0; /* Remove default padding */
-    margin: 0; /* Remove default margin */
+    justify-content: center; /* Center-align the list items within the navbar */
+    padding: 0;
+    margin: 0;
 }
 
 .navbar ul li {
@@ -173,4 +174,3 @@ ul li strong {
 .contact-links img:hover {
     transform: scale(1.1);
 }
-
