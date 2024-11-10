@@ -80,28 +80,27 @@
             margin-top: 10px;
         }
 
-        /* Contact information styling */
+        /* Footer Contact Links Styling */
         .contact-info {
             display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin-top: 30px;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+            position: fixed;
+            bottom: 20px;
+            width: 100%;
+            background-color: #333;
         }
 
-        .contact-info a {
+        .contact-info a, .contact-info p {
             color: #00aaff;
-            font-weight: bold;
             text-decoration: none;
-            margin: 5px 0;
+            font-weight: bold;
+            transition: color 0.3s;
         }
 
-        .contact-info a:hover {
+        .contact-info a:hover, .contact-info p:hover {
             color: #ddd;
-        }
-
-        .contact-info p {
-            margin: 5px 0;
-            color: #ccc;
         }
     </style>
 </head>
@@ -120,18 +119,21 @@
 
     <!-- Full-Page Home Content -->
     <main class="main-content">
-        <h1 class="headline">Sindhuja Maheswaran</h1>
-        <p class="tagline">Master of Applied Data Science | Data Analyst | Machine Learning Enthusiast</p>
-        <p class="tagline">Passionate about transforming data into actionable insights to drive impactful decisions.</p>
-        
-        <!-- Contact Information -->
-        <div class="contact-info">
-            <p>Email: sindhu.m2211@gmail.com</p>
-            <p>Phone: 315-450-9688</p>
-            <a href="https://github.com/SindhujaMaheswaran" target="_blank">GitHub</a>
-            <a href="https://www.linkedin.com/in/sindhuja-maheswaran" target="_blank">LinkedIn</a>
+        <div class="profile">
+            <!-- Profile Section with Headline and Tagline -->
+            <h1 class="headline">Sindhuja Maheswaran</h1>
+            <p class="tagline tagline-1">Master of Applied Data Science | Data Analyst | Machine Learning Enthusiast</p>
+            <p class="tagline tagline-2">Passionate about transforming data into actionable insights to drive impactful decisions.</p>
         </div>
     </main>
+
+    <!-- Contact Information at the Bottom -->
+    <div class="contact-info">
+        <a href="https://www.linkedin.com/in/sindhuja-maheswaran" target="_blank">LinkedIn</a>
+        <a href="https://github.com/SindhujaMaheswaran" target="_blank">GitHub</a>
+        <p>Phone: 315-450-9688</p>
+        <p>Email: sindhu.m2211@gmail.com</p>
+    </div>
 
 </body>
 </html>
