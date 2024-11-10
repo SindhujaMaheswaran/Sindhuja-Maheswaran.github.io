@@ -18,6 +18,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh; /* Ensures full viewport height */
+    overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
 /* Navbar styling */
@@ -34,7 +35,9 @@ body {
 .navbar ul {
     list-style-type: none;
     display: flex;
-    justify-content: center;
+    justify-content: center; /* Center-align the list items */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
 }
 
 .navbar ul li {
@@ -170,3 +173,4 @@ ul li strong {
 .contact-links img:hover {
     transform: scale(1.1);
 }
+
