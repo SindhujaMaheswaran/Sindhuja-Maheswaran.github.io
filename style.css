@@ -35,10 +35,11 @@
     color: #fff;
 }
 
-/* Smaller image size */
+/* Forcing smaller image size */
 .project-img {
-    width: 100px; /* Set a fixed width */
-    height: auto; /* Maintain aspect ratio */
+    max-width: 80px; /* Forces the image to stay within 80px width */
+    height: auto; /* Maintains aspect ratio */
     border-radius: 8px;
     margin-bottom: 10px;
+    object-fit: cover; /* Ensures images maintain proportions */
 }
