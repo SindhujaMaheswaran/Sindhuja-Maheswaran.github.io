@@ -35,11 +35,11 @@
     color: #fff;
 }
 
-/* Forcing smaller image size */
+/* Forcing image size to 30x30 pixels */
 .project-img {
-    max-width: 80px; /* Forces the image to stay within 80px width */
-    height: auto; /* Maintains aspect ratio */
+    width: 30px; /* Set fixed width */
+    height: 30px; /* Set fixed height */
     border-radius: 8px;
     margin-bottom: 10px;
-    object-fit: cover; /* Ensures images maintain proportions */
+    object-fit: cover; /* Keeps aspect ratio within 30x30 */
 }
