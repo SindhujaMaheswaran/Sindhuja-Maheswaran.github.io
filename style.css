@@ -18,7 +18,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center; /* Center content vertically if shorter than viewport */
     min-height: 100vh;
     overflow-x: hidden; /* Prevent horizontal scroll */
 }
@@ -59,8 +58,8 @@ body {
 
 /* Main content styling */
 .main-content {
-    width: 100%;
-    max-width: 900px; /* Increased max-width for wider content */
+    width: 100%; /* Full width */
+    max-width: 1200px; /* Limits the content width on large screens */
     padding: 20px;
     background-color: #222; /* Darker background for content area */
     color: #fff; /* White text for readability */
