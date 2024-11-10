@@ -1,3 +1,4 @@
+
 /* Reset styling */
 * {
     margin: 0;
@@ -68,14 +69,6 @@ h2 {
     margin-bottom: 20px;
 }
 
-/* Section border and spacing */
-.section-container {
-    border: 2px solid #333;
-    padding: 20px;
-    border-radius: 8px;
-    margin-bottom: 20px;
-}
-
 /* Project grid layout */
 .project-grid {
     display: grid;
@@ -117,12 +110,12 @@ h2 {
     color: #ddd;
 }
 
-/* Skills and Certification Section */
-.skills-summary, .certifications, .experience {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    text-align: left;
+/* Skills Summary Section */
+.skills-summary h2 {
+    font-size: 1.8em;
+    color: #00aaff;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 /* Three-column layout for skills */
@@ -134,7 +127,7 @@ h2 {
     flex-wrap: wrap; /* Allows wrap for smaller screens */
 }
 
-.skills-columns div, .certifications div, .experience div {
+.skills-columns ul {
     padding: 15px;
     background-color: #333;
     border-radius: 8px;
@@ -144,16 +137,29 @@ h2 {
     color: #ddd;
 }
 
-/* Certification styling */
-.certification-title, .skills-title {
-    color: #00aaff;
-    font-size: 1.3em;
-    margin-bottom: 8px;
+.skills-columns ul:not(:last-child) {
+    border-right: 2px solid #444; /* Divider line between columns */
 }
 
-.certification-description, .skills-description, .experience-description {
-    color: #ccc;
-    font-size: 1em;
+/* Different colors for each skill category */
+.skills-columns ul:nth-child(1) {
+    background-color: #1a1a1a;
+    color: #00ffcc;
+}
+
+.skills-columns ul:nth-child(2) {
+    background-color: #2b2b2b;
+    color: #ffcc00;
+}
+
+.skills-columns ul:nth-child(3) {
+    background-color: #3b3b3b;
+    color: #ff6699;
+}
+
+/* Skill items styling */
+.skills-columns ul li {
+    margin-bottom: 10px;
     line-height: 1.5;
 }
 
@@ -169,7 +175,12 @@ h2 {
     margin-bottom: 10px;
 }
 
-.education p {
+.education ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.education ul li {
     font-size: 1.1em;
     margin-bottom: 10px;
     color: #ddd;
