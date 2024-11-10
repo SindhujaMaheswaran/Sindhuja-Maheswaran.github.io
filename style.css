@@ -1,4 +1,67 @@
-/* Project container styling for responsive grid */
+/* Reset styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global body styling with black background for all pages */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000 !important; /* Force black background */
+    color: #fff !important; /* Force white text for contrast */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Navbar styling */
+.navbar {
+    width: 100%;
+    background-color: #333 !important; /* Dark gray for navbar */
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    color: #fff !important;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #ddd !important;
+}
+
+/* Main content styling */
+.main-content {
+    margin-top: 80px !important; /* Space for fixed navbar */
+    width: 90% !important;
+    max-width: 1200px !important;
+    padding: 20px !important;
+    background-color: #222 !important; /* Darker background for content area */
+    color: #fff !important;
+    border-radius: 8px !important;
+    box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.1) !important;
+}
+
+/* Project grid layout */
 .project-grid {
     display: flex;
     flex-wrap: wrap;
@@ -11,29 +74,25 @@
     background-color: #333;
     color: #fff;
     border-radius: 8px;
+    border: 2px solid #00aaff; /* Border for project cards */
     padding: 20px;
     text-align: center;
-    flex: 1 1 250px; /* Flexibility for responsiveness */
-    max-width: 250px; /* Limit max width for each project card */
+    flex: 1 1 calc(33.333% - 20px); /* Three columns */
     box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.1);
+    max-width: 300px;
 }
 
-/* Project image styling */
-.project img.project-img {
-    width: 50px; /* Set smaller width */
-    height: 50px; /* Set smaller height */
-    border-radius: 8px;
-    margin-bottom: 10px;
-    object-fit: cover; /* Maintain aspect ratio */
-}
-
-/* Link styling */
-.project a {
+/* Project title */
+.project h3 {
     color: #00aaff;
-    text-decoration: none;
-    font-weight: bold;
 }
 
-.project a:hover {
-    color: #ddd;
+/* Footer styling */
+.footer {
+    width: 100%;
+    background-color: #333 !important;
+    color: #888 !important;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 20px;
 }
