@@ -76,13 +76,20 @@ h2 {
     margin-top: 20px;
 }
 
+/* Project card styling */
 .project {
     background-color: #333;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.2);
     text-align: left;
     color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project:hover {
+    transform: translateY(-5px); /* Lift effect */
+    box-shadow: 0px 6px 12px rgba(255, 255, 255, 0.3); /* Enhanced shadow on hover */
 }
 
 /* Project title styling */
@@ -95,6 +102,7 @@ h2 {
 .project p {
     color: #ccc;
     margin-bottom: 10px;
+    line-height: 1.4;
 }
 
 .project a {
@@ -107,55 +115,16 @@ h2 {
     color: #ddd;
 }
 
-/* Skills Summary Section */
-.skills-summary h2 {
-    font-size: 1.8em;
-    color: #00aaff;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-/* Skills grid layout for individual skill blocks */
-.skills-columns {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Three columns */
-    gap: 20px;
-    margin-top: 20px;
-}
-
-.skills-columns div {
-    padding: 15px;
-    background-color: #333;
-    border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.1);
-    color: #ddd;
-    text-align: left;
-}
-
-/* Certification grid and individual box styling */
-.certification-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Three columns for certifications */
-    gap: 20px;
-    margin-top: 20px;
-}
-
-.certification-box {
-    background-color: #333;
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.1);
-    text-align: center;
-    color: #00aaff;
-    font-weight: bold;
-}
-
 /* Responsive layout for smaller screens */
+@media (max-width: 1024px) {
+    .project-grid {
+        grid-template-columns: 1fr 1fr; /* Two columns on medium screens */
+    }
+}
+
 @media (max-width: 768px) {
-    .project-grid,
-    .skills-columns,
-    .certification-grid {
-        grid-template-columns: 1fr; /* Stack projects and skills in one column on smaller screens */
+    .project-grid {
+        grid-template-columns: 1fr; /* Single column on small screens */
     }
 }
 
