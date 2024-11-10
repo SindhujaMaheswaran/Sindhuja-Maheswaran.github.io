@@ -127,7 +127,6 @@ h2 {
 }
 
 .skills-columns ul {
-    list-style-type: none;
     padding: 15px;
     background-color: #333;
     border-radius: 8px;
@@ -137,15 +136,30 @@ h2 {
     color: #ddd;
 }
 
+.skills-columns ul:not(:last-child) {
+    border-right: 2px solid #444; /* Divider line between columns */
+}
+
+/* Different colors for each skill category */
+.skills-columns ul:nth-child(1) {
+    background-color: #1a1a1a;
+    color: #00ffcc;
+}
+
+.skills-columns ul:nth-child(2) {
+    background-color: #2b2b2b;
+    color: #ffcc00;
+}
+
+.skills-columns ul:nth-child(3) {
+    background-color: #3b3b3b;
+    color: #ff6699;
+}
+
+/* Skill items styling */
 .skills-columns ul li {
     margin-bottom: 10px;
     line-height: 1.5;
-}
-
-.skills-columns ul li strong {
-    display: block;
-    margin-bottom: 5px;
-    color: #00aaff;
 }
 
 /* Education Section Styling */
@@ -180,3 +194,4 @@ h2 {
     padding: 15px 0;
     margin-top: 40px;
 }
+
