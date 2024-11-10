@@ -35,11 +35,12 @@
     color: #fff;
 }
 
-/* Forcing image size to 30x30 pixels */
+/* Forcing very small image size */
 .project-img {
-    width: 30px; /* Set fixed width */
-    height: 30px; /* Set fixed height */
-    border-radius: 8px;
+    width: 30px !important; /* Fixed width to 30px */
+    height: 30px !important; /* Fixed height to 30px */
+    object-fit: cover; /* Maintain aspect ratio */
     margin-bottom: 10px;
-    object-fit: cover; /* Keeps aspect ratio within 30x30 */
+    border-radius: 5px;
 }
+
