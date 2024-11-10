@@ -8,8 +8,8 @@
 /* Global body styling with black background */
 body {
     font-family: Arial, sans-serif;
-    background-color: #000; /* Set entire page background to black */
-    color: #fff;
+    background-color: #000 !important; /* Set entire page background to black */
+    color: #fff !important;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -19,7 +19,7 @@ body {
 /* Navbar styling */
 .navbar {
     width: 100%;
-    background-color: #333;
+    background-color: #333 !important;
     padding: 10px 0;
     text-align: center;
     position: fixed;
@@ -40,93 +40,94 @@ body {
 }
 
 .navbar ul li a {
-    color: #fff;
+    color: #fff !important;
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s;
 }
 
 .navbar ul li a:hover {
-    color: #ddd;
+    color: #ddd !important;
 }
 
 /* Main content styling */
 .main-content {
-    margin-top: 60px; /* Space for fixed navbar */
-    width: 90%;
-    max-width: 1200px;
-    padding: 20px;
-    background-color: #222; /* Dark background for content area */
-    color: #fff;
-    border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.1);
+    margin-top: 80px !important; /* Space for fixed navbar */
+    width: 90% !important;
+    max-width: 1200px !important;
+    padding: 20px !important;
+    background-color: #222 !important; /* Dark background for content area */
+    color: #fff !important;
+    border-radius: 8px !important;
+    box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.1) !important;
 }
 
 /* Heading styling */
 h2 {
-    font-size: 2em;
-    color: #00aaff;
-    text-align: center;
-    margin-bottom: 20px;
+    font-size: 2em !important;
+    color: #00aaff !important;
+    text-align: center !important;
+    margin-bottom: 20px !important;
 }
 
 /* Grid layout for projects */
 .project-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    justify-items: center;
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 20px !important;
+    justify-items: center !important;
+    margin-top: 20px !important;
 }
 
 .project {
-    background-color: #333;
-    padding: 15px;
-    border-radius: 8px;
-    text-align: center;
-    box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.2);
+    background-color: #333 !important;
+    padding: 15px !important;
+    border-radius: 8px !important;
+    text-align: center !important;
+    box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.2) !important;
 }
 
 /* Project image styling */
 .project-img {
-    width: 30px; /* Smaller image size */
-    height: 30px;
-    margin-bottom: 10px;
-    border-radius: 50%; /* Optional: make images circular */
-    object-fit: cover;
+    width: 30px !important; /* Forcing smaller image size */
+    height: 30px !important;
+    margin-bottom: 10px !important;
+    border-radius: 50% !important; /* Optional: make images circular */
+    object-fit: cover !important;
 }
 
 /* Project title */
 .project h3 {
-    color: #00aaff;
-    font-size: 1.2em;
-    margin: 10px 0;
+    color: #00aaff !important;
+    font-size: 1.2em !important;
+    margin: 10px 0 !important;
 }
 
 /* Project text */
 .project p {
-    color: #ccc;
-    margin: 5px 0;
+    color: #ccc !important;
+    margin: 5px 0 !important;
 }
 
 .project a {
-    color: #00aaff;
-    text-decoration: none;
-    font-weight: bold;
-    display: inline-block;
-    margin-top: 10px;
+    color: #00aaff !important;
+    text-decoration: none !important;
+    font-weight: bold !important;
+    display: inline-block !important;
+    margin-top: 10px !important;
 }
 
 .project a:hover {
-    color: #fff;
+    color: #fff !important;
 }
 
 /* Footer styling */
 .footer {
-    width: 100%;
-    background-color: #333;
-    color: #888;
-    text-align: center;
-    padding: 15px 0;
-    position: fixed;
-    bottom: 0;
+    width: 100% !important;
+    background-color: #333 !important;
+    color: #888 !important;
+    text-align: center !important;
+    padding: 15px 0 !important;
+    position: fixed !important;
+    bottom: 0 !important;
 }
