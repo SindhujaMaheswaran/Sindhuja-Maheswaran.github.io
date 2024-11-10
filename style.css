@@ -1,3 +1,4 @@
+
 /* Reset styling */
 * {
     margin: 0;
@@ -68,43 +69,45 @@ h2 {
     margin-bottom: 20px;
 }
 
-/* Work Experience Section Styling */
-.job {
+/* Project grid layout */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Responsive columns */
+    gap: 20px; /* Space between projects */
+    text-align: left;
+}
+
+/* Project card styling */
+.project {
     background-color: #333;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.1);
-    text-align: left; /* Align text to the left */
-}
-
-.job h3 {
-    color: #00aaff; /* Blue color for job title */
-    font-size: 1.5em;
-    margin-bottom: 5px;
-}
-
-.job p.location {
-    font-style: italic;
-    color: #00aaff; /* Blue color for location */
-    margin-bottom: 10px;
-    font-size: 1em;
-}
-
-/* Job details styling */
-.job-details {
-    padding-left: 20px;
-}
-
-.job-details p {
-    color: #ddd;
-    margin-bottom: 10px;
-    line-height: 1.6;
-}
-
-.job-details p strong {
-    font-weight: bold;
     color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.project h3 {
+    color: #00aaff;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.project p {
+    margin-bottom: 10px;
+    color: #ccc;
+}
+
+.project a {
+    color: #00aaff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.project a:hover {
+    color: #ddd;
 }
 
 /* Skills Summary Section */
@@ -124,7 +127,7 @@ h2 {
     flex-wrap: wrap; /* Allows wrap for smaller screens */
 }
 
-.skills-columns div {
+.skills-columns ul {
     padding: 15px;
     background-color: #333;
     border-radius: 8px;
@@ -134,20 +137,30 @@ h2 {
     color: #ddd;
 }
 
+.skills-columns ul:not(:last-child) {
+    border-right: 2px solid #444; /* Divider line between columns */
+}
+
 /* Different colors for each skill category */
-.skills-columns div:nth-child(1) {
+.skills-columns ul:nth-child(1) {
     background-color: #1a1a1a;
-    color: ##00aaff;
+    color: #00ffcc;
 }
 
-.skills-columns div:nth-child(2) {
+.skills-columns ul:nth-child(2) {
     background-color: #2b2b2b;
-    color: ##00aaff;
+    color: #ffcc00;
 }
 
-.skills-columns div:nth-child(3) {
+.skills-columns ul:nth-child(3) {
     background-color: #3b3b3b;
-    color: ##00aaff;
+    color: #ff6699;
+}
+
+/* Skill items styling */
+.skills-columns ul li {
+    margin-bottom: 10px;
+    line-height: 1.5;
 }
 
 /* Education Section Styling */
@@ -181,26 +194,4 @@ h2 {
     text-align: center;
     padding: 15px 0;
     margin-top: 40px;
-}
-
-/* Certification styling */
-.certification {
-    background-color: #333;
-    padding: 15px;
-    margin-bottom: 15px;
-    border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.1);
-    text-align: left;
-}
-
-.certification h3 {
-    color: #00aaff;
-    font-size: 1.3em;
-    margin-bottom: 8px;
-}
-
-.certification p {
-    color: #ccc;
-    font-size: 1em;
-    line-height: 1.5;
 }
