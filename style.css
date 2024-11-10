@@ -1,11 +1,11 @@
-/* Reset styling */
+/* General Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Global body styling */
+/* Global styling */
 body {
     font-family: Arial, sans-serif;
     background-color: #000;
@@ -16,7 +16,6 @@ body {
     min-height: 100vh;
 }
 
-/* Navbar styling */
 .navbar {
     width: 100%;
     background-color: #333;
@@ -48,7 +47,6 @@ body {
     color: #ddd;
 }
 
-/* Main content styling */
 .main-content {
     margin-top: 80px;
     width: 90%;
@@ -61,31 +59,27 @@ body {
     text-align: center;
 }
 
-/* Heading styling */
 h2 {
     font-size: 2em;
     color: #00aaff;
     margin-bottom: 20px;
 }
 
-/* Project grid layout */
-.project-grid, .skills-columns {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 20px;
-    text-align: left;
+/* Grid layout for Projects and Skills */
+.project-grid, .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns */
+    gap: 20px; /* Space between items */
+    margin-top: 20px;
 }
 
-/* Project and Skills Card Styling */
 .project, .skills-card {
     background-color: #333;
     color: #fff;
     border-radius: 8px;
     padding: 20px;
-    width: calc(33% - 20px); /* Three columns */
-    min-width: 250px; /* Ensures cards don't get too small */
     box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.1);
+    text-align: left;
 }
 
 .project h3, .skills-card h4 {
@@ -95,7 +89,6 @@ h2 {
 }
 
 .project p, .skills-card p {
-    margin-bottom: 10px;
     color: #ccc;
     line-height: 1.5;
 }
@@ -110,31 +103,13 @@ h2 {
     color: #ddd;
 }
 
-/* Skills Columns for Better Alignment */
-.skills-columns {
-    margin-top: 20px;
-    text-align: left;
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .project-grid, .skills-grid {
+        grid-template-columns: 1fr; /* Stacks items in a single column on smaller screens */
+    }
 }
 
-.skills-card {
-    padding: 15px;
-    background-color: #333;
-    border-radius: 8px;
-    width: 100%;
-    box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.1);
-}
-
-.skills-card h4 {
-    color: #00ffcc;
-    margin-bottom: 10px;
-}
-
-.skills-card p {
-    color: #ccc;
-    line-height: 1.6;
-}
-
-/* Footer styling */
 .footer {
     width: 100%;
     background-color: #333;
