@@ -1,29 +1,122 @@
-/* Skills Section */
-.skills-grid {
+/* Reset styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global body styling with black background for all pages */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000 !important; /* Force black background */
+    color: #fff !important; /* Force white text for contrast */
     display: flex;
-    gap: 20px;
-    margin-top: 20px;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
 }
 
-.skills-column {
-    flex: 1;
-    background-color: #333; /* Darker background for columns */
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.1);
+/* Navbar styling */
+.navbar {
+    width: 100%;
+    background-color: #333 !important; /* Dark gray for navbar */
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
 }
 
-.skills-column h3 {
-    color: #00aaff; /* Light blue for section headings */
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    color: #fff !important;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #ddd !important;
+}
+
+/* Main content styling */
+.main-content {
+    margin-top: 80px !important; /* Space for fixed navbar */
+    width: 90% !important;
+    max-width: 800px !important;
+    padding: 20px !important;
+    background-color: #222 !important; /* Darker background for content area */
+    color: #fff !important;
+    border-radius: 8px !important;
+    box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.1) !important;
+}
+
+/* Heading styling */
+h2 {
+    font-size: 2em !important;
+    color: #00aaff !important;
+    text-align: center !important;
+    margin-bottom: 20px !important;
+}
+
+/* Education section styling */
+.education {
+    margin-bottom: 20px;
+}
+
+.education h3 {
+    color: #00aaff;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* List styling for education details */
+.education p {
+    text-align: center;
+    color: #ccc;
     margin-bottom: 10px;
 }
 
-.skills-column ul {
-    list-style-type: disc;
-    padding-left: 20px;
-    color: #ccc; /* Lighter color for readability */
+/* Skills Section */
+.skills-section {
+    margin-top: 20px;
 }
 
-.skills-column li {
-    margin-bottom: 8px;
+.skills-section h3 {
+    color: #00aaff;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Multi-column styling for skills list */
+.skills-list {
+    column-count: 3; /* Number of columns */
+    column-gap: 20px; /* Space between columns */
+    list-style-type: disc; /* Bullet points for list items */
+    padding-left: 20px;
+}
+
+.skills-list li {
+    color: #ccc;
+    margin-bottom: 10px;
+}
+
+/* Footer styling */
+.footer {
+    width: 100%;
+    background-color: #333 !important;
+    color: #888 !important;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 20px;
 }
