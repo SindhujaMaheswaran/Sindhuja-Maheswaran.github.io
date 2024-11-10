@@ -5,11 +5,11 @@
     box-sizing: border-box;
 }
 
-/* Body styling */
+/* Body styling with black background */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
-    color: #333;
+    background-color: #000; /* Black background */
+    color: #fff; /* White text for contrast */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -19,7 +19,7 @@ body {
 /* Header (Navigation Bar) */
 .navbar {
     width: 100%;
-    background-color: #0073e6;
+    background-color: #333; /* Dark gray for slight contrast against black background */
     padding: 10px 0;
     text-align: center;
     position: fixed;
@@ -52,37 +52,12 @@ body {
 .main-content {
     width: 90%;
     max-width: 800px;
-    background: white;
+    background: #222; /* Dark gray background for content sections */
     margin-top: 80px; /* Space for the fixed navbar */
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: left;
-}
-
-h2 {
-    color: #0073e6;
-    font-size: 1.8em;
-    margin-bottom: 10px;
     text-align: center;
-}
-
-h3 {
-    color: #0073e6;
-    font-size: 1.4em;
-    margin-top: 20px;
-}
-
-/* List styling */
-ul {
-    margin-left: 20px;
-    padding-left: 15px;
-    list-style-type: disc;
-}
-
-ul li {
-    margin: 8px 0;
-    line-height: 1.5;
 }
 
 /* Profile Image */
@@ -91,39 +66,25 @@ ul li {
     height: 100px;
     border-radius: 50%;
     margin-bottom: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.3); /* Light shadow */
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
-/* Summary and Tagline animations */
+/* Summary and Tagline */
 .headline {
     font-size: 1.5em;
-    color: #0073e6;
+    color: #00aaff; /* Light blue for contrast */
     text-align: center;
     margin-top: 10px;
-    animation: slideIn 2s ease-out forwards;
-    opacity: 0;
 }
 
 .tagline {
     font-size: 1.1em;
-    color: #555;
+    color: #ccc; /* Lighter gray for contrast */
     text-align: center;
     margin-top: 5px;
-    animation: fadeInText 3s ease-in forwards;
-    opacity: 0;
-}
-
-@keyframes slideIn {
-    from { transform: translateY(-20px); opacity: 0; }
-    to { transform: translateY(0); opacity: 1; }
-}
-
-@keyframes fadeInText {
-    from { opacity: 0; }
-    to { opacity: 1; }
 }
 
 /* Contact links styling */
@@ -139,6 +100,7 @@ ul li {
     margin: 0 10px;
     cursor: pointer;
     transition: transform 0.3s;
+    filter: brightness(0) invert(1); /* Invert icons for better contrast on black background */
 }
 
 .contact-links img:hover {
@@ -148,7 +110,7 @@ ul li {
 /* Footer styling */
 .footer {
     width: 100%;
-    background-color: #f1f1f1;
+    background-color: #333;
     color: #888;
     text-align: center;
     padding: 15px 0;
