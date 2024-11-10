@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home - Sindhuja Maheswaran's Portfolio</title>
-    <!-- Inline CSS for Testing -->
     <style>
         /* Reset styling */
         * {
@@ -66,6 +65,7 @@
             align-items: center; /* Center content horizontally */
             text-align: center;
             padding: 20px;
+            animation: fadeIn 2s ease-in-out; /* Fade-in animation */
         }
 
         /* Profile Image */
@@ -82,25 +82,52 @@
             font-size: 2.5em;
             color: #00aaff; /* Light blue for contrast */
             margin: 10px 0;
+            animation: slideIn 1.5s ease-out forwards; /* Slide-in animation */
         }
 
         .sub-headline {
             font-size: 1.2em;
             color: #bbb; /* Light gray for contrast */
             margin-bottom: 15px;
+            animation: slideIn 1.5s ease-out forwards; /* Slide-in animation */
         }
 
         .tagline {
             font-size: 1.1em;
             color: #ccc;
             margin-top: 10px;
+            animation: fadeInText 2.5s ease-in forwards; /* Fade-in animation */
+        }
+
+        /* Animations */
+        @keyframes slideIn {
+            from {
+                transform: translateY(-20px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInText {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
         }
 
         /* Contact links styling */
         .contact-links {
             display: flex;
             justify-content: center;
-            margin-top: 15px;
+            position: fixed;
+            bottom: 20px;
+            width: 100%;
+            padding-bottom: 10px;
         }
 
         .contact-links img {
@@ -151,14 +178,12 @@
     </main>
 
     <!-- Footer with Contact Icons -->
-    <footer class="footer">
-        <div class="contact-links">
-            <a href="mailto:smaheswa@syr.edu"><img src="gmail.jpg" alt="Email"></a>
-            <a href="https://www.linkedin.com/in/sindhuja-maheswaran" target="_blank"><img src="LinkedIn.jpg" alt="LinkedIn"></a>
-            <a href="https://github.com/SindhujaMaheswaran" target="_blank"><img src="github.jpg" alt="GitHub"></a>
-        </div>
-        <p>© 2024 Sindhuja Maheswaran | Built with HTML & CSS</p>
-    </footer>
+    <div class="contact-links">
+        <a href="mailto:smaheswa@syr.edu"><img src="gmail.jpg" alt="Gmail"></a>
+        <a href="https://outlook.live.com" target="_blank"><img src="outlook.jpg" alt="Outlook"></a>
+        <a href="https://www.linkedin.com/in/sindhuja-maheswaran" target="_blank"><img src="LinkedIn.jpg" alt="LinkedIn"></a>
+        <a href="https://github.com/SindhujaMaheswaran" target="_blank"><img src="github.jpg" alt="GitHub"></a>
+    </div>
 
 </body>
 </html>
