@@ -136,18 +136,18 @@ h2 {
 
 /* Different colors for each skill category */
 .skills-columns div:nth-child(1) {
-    background-color: #1a1a1a;
+    background-color: #00aaff;
     color: #00ffcc;
 }
 
 .skills-columns div:nth-child(2) {
     background-color: #2b2b2b;
-    color: #ffcc00;
+    color: ##00aaff;
 }
 
 .skills-columns div:nth-child(3) {
     background-color: #3b3b3b;
-    color: #ff6699;
+    color: ##00aaff;
 }
 
 /* Education Section Styling */
