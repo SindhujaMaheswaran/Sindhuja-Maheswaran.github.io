@@ -5,19 +5,22 @@
     box-sizing: border-box;
 }
 
-/* Body styling with black background */
+/* Body styling */
 body {
     font-family: Arial, sans-serif;
-    background-color: #000; /* Black background */
-    color: #fff; /* White text for contrast */
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     min-height: 100vh;
 }
 
-/* Header (Navigation Bar) */
+/* Navbar styling */
 .navbar {
     width: 100%;
-    background-color: #333; /* Dark gray for contrast */
-    padding: 10px 0;
+    background-color: #0073e6;
+    padding: 10px;
     text-align: center;
     position: fixed;
     top: 0;
@@ -38,70 +41,44 @@ body {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
-    transition: color 0.3s;
 }
 
 .navbar ul li a:hover {
-    color: #ccc;
+    color: #ddd;
 }
 
-/* Full-page Main Content */
+/* Main content styling */
 .main-content {
-    min-height: 100vh; /* Full viewport height */
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* Center content vertically */
-    align-items: center; /* Center content horizontally */
-    text-align: center;
+    margin-top: 60px; /* Space for fixed navbar */
+    width: 90%;
+    max-width: 800px;
     padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Profile Image */
-.profile-img {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
+h2 {
+    font-size: 1.8em;
+    color: #0073e6;
     margin-bottom: 15px;
-    box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.3); /* Light shadow */
+    text-align: center;
 }
 
-/* Headline and Tagline Styling */
-.headline {
-    font-size: 2.5em;
-    color: #00aaff; /* Light blue for contrast */
-    margin: 10px 0;
+/* List styling */
+ul {
+    list-style-type: none;
+    padding-left: 0;
 }
 
-.sub-headline {
+ul li {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+ul li strong {
     font-size: 1.2em;
-    color: #bbb; /* Light gray for contrast */
-    margin-bottom: 15px;
-}
-
-.tagline {
-    font-size: 1.1em;
-    color: #ccc;
-    margin-top: 10px;
-}
-
-/* Contact links styling */
-.contact-links {
-    display: flex;
-    justify-content: center;
-    margin-top: 15px;
-}
-
-.contact-links img {
-    width: 30px;
-    height: 30px;
-    margin: 0 10px;
-    cursor: pointer;
-    transition: transform 0.3s;
-    filter: brightness(0) invert(1); /* Invert icons for contrast */
-}
-
-.contact-links img:hover {
-    transform: scale(1.1);
+    color: #0073e6;
 }
 
 /* Footer styling */
@@ -111,5 +88,5 @@ body {
     color: #888;
     text-align: center;
     padding: 15px 0;
-    position: relative;
+    margin-top: 20px;
 }
