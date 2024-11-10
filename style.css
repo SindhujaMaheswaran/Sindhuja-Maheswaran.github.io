@@ -1,4 +1,3 @@
-/* Project grid styling */
 .project-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -36,9 +35,10 @@
     color: #fff;
 }
 
+/* Smaller image size */
 .project-img {
-    width: 20%;
-    height: auto;
+    width: 100px; /* Set a fixed width */
+    height: auto; /* Maintain aspect ratio */
     border-radius: 8px;
     margin-bottom: 10px;
 }
