@@ -1,53 +1,122 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Education - Sindhuja Maheswaran</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+/* Reset styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-    <!-- Header with Navigation Links -->
-    <header class="navbar">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="certifications.html">Certifications</a></li>
-            <li><a href="experience.html">Experience</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="skills.html">Education</a></li>
-        </ul>
-    </header>
+/* Global body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
 
-    <!-- Main Content -->
-    <main class="main-content">
-        <h2>Education</h2>
-        <section class="education">
-            <h3>Master of Applied Data Science</h3>
-            <p><strong>Institution:</strong> Syracuse University, New York, USA (Expected December 2024)</p>
-            <p class="description">
-                I am completing a Master of Applied Data Science at Syracuse University, expected in December 2024,
-                where I have honed expertise in data analytics, machine learning, and advanced statistical methods,
-                equipping me to derive impactful insights from complex datasets. This program has provided hands-on 
-                experience in predictive modeling, data visualization, and scalable data engineering, preparing me to 
-                address real-world business challenges with innovative data-driven solutions. My academic journey began 
-                with a Bachelor’s in Computer Science from Anna University, India (May 2018), which gave me a robust 
-                foundation in software development, algorithm design, and problem-solving. This combination of deep 
-                technical knowledge and applied analytics experience positions me well to contribute effectively to 
-                dynamic, data-centric environments and drive strategic decision-making for impactful business outcomes.
-            </p>
-        
-            <h3>Key Skills and Competencies</h3>
-            <ul class="skills-list">
-                <li>Collect, store, and access data by identifying and leveraging applicable technologies.</li>
-                <li>Create actionable insight across a range of contexts (e.g., societal, business, political) using data and the full data science life cycle.</li>
-                <li>Apply visualization and predictive models to help generate actionable insight.</li>
-                <li>Use programming languages such as R and Python to support the generation of actionable insight.</li>
-                <li>Communicate insights gained via visualization and analytics to a broad range of audiences (including project sponsors and technical team leads).</li>
-                <li>Apply ethics in the development, use, and evaluation of data and predictive models (e.g., fairness, bias, transparency, privacy).</li>
-            </ul>
-        </section>
-    </main>
+/* Navbar styling */
+.navbar {
+    width: 100%;
+    background-color: #333;
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
 
-</body>
-</html>
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #ddd;
+}
+
+/* Main content styling */
+.main-content {
+    margin-top: 80px; /* Space for navbar */
+    width: 90%;
+    max-width: 800px; /* For readability on larger screens */
+    padding: 20px;
+    background-color: #222; /* Darker content area */
+    color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.1);
+    text-align: left;
+}
+
+/* Section heading styling */
+.main-content h2 {
+    font-size: 2em;
+    color: #00aaff;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Education title styling */
+.education h3 {
+    color: #00aaff;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+/* Institution and date styling */
+.education p strong {
+    color: #00ffcc;
+}
+
+/* Education description styling */
+.education .description {
+    margin-top: 10px;
+    line-height: 1.6;
+    text-align: justify;
+    color: #ccc;
+}
+
+/* Key Skills and Competencies heading */
+.main-content h3 {
+    font-size: 1.5em;
+    color: #00aaff;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* Skills list styling */
+.skills-list {
+    list-style-type: disc;
+    padding-left: 1.5em; /* Indent bullets from left */
+    color: #ccc;
+    line-height: 1.6;
+}
+
+.skills-list li {
+    margin-bottom: 8px;
+}
+
+/* Footer styling */
+.footer {
+    width: 100%;
+    background-color: #333;
+    color: #888;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 40px;
+    position: fixed;
+    bottom: 0;
+}
