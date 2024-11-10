@@ -1,4 +1,4 @@
-/* Reset styling */
+* Reset styling */
 * {
     margin: 0;
     padding: 0;
@@ -67,8 +67,6 @@ h2 {
     color: #00aaff;
     margin-bottom: 20px;
 }
-
-
 
 /* Work Experience Section Styling */
 .job {
@@ -201,4 +199,4 @@ h2 {
     text-align: center;
     color: #00aaff;
     font-weight: bold;
-}
+} 
