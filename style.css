@@ -152,12 +152,6 @@ h2 {
     color: #ff6699;
 }
 
-/* Skill items styling */
-.skills-columns ul li {
-    margin-bottom: 10px;
-    line-height: 1.5;
-}
-
 /* Education Section Styling */
 .education {
     margin-top: 30px;
@@ -212,34 +206,44 @@ h2 {
     line-height: 1.5;
 }
 
-/* Job experience styling */
+/* Work Experience Section Styling */
 .job {
     text-align: left;
     background-color: #333;
-    padding: 15px;
+    padding: 20px;
     margin-bottom: 20px;
     border-radius: 8px;
     box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.1);
+    position: relative;
 }
 
 .job h3 {
     color: #00aaff;
     font-size: 1.5em;
     margin-bottom: 5px;
+    text-align: left; /* Align job title to the left */
 }
 
-.job p {
-    font-size: 1.1em;
-    color: #ccc;
+.job p.location {
+    font-style: italic;
+    color: #00aaff;
+    text-align: left; /* Align location to the left */
     margin-bottom: 10px;
+    font-size: 1em;
 }
 
-.job .job-details p {
+.job-details {
+    padding-left: 20px;
+}
+
+.job-details p {
     color: #ddd;
     margin-bottom: 10px;
     line-height: 1.6;
+    text-align: justify;
 }
 
-.job .job-details p strong {
-    color: #00aaff;
+.job-details p strong {
+    font-weight: bold;
+    color: #fff;
 }
