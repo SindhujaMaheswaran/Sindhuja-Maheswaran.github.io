@@ -5,6 +5,11 @@
     box-sizing: border-box;
 }
 
+/* HTML and body full height */
+html, body {
+    height: 100%; /* Full viewport height */
+}
+
 /* Body styling with black background for all pages */
 body {
     font-family: Arial, sans-serif;
@@ -12,9 +17,7 @@ body {
     color: #fff; /* White text for contrast on black background */
     display: flex;
     flex-direction: column;
-    align-items: center;
-    min-height: 100vh;
-    overflow-x: hidden; /* Prevent horizontal scroll */
+    min-height: 100vh; /* Ensures full viewport height */
 }
 
 /* Navbar styling */
@@ -51,9 +54,9 @@ body {
 
 /* Main content styling */
 .main-content {
-    flex-grow: 1; /* Allow content to expand to full height */
+    flex: 1; /* Expands to fill available space */
     margin-top: 60px; /* Space for fixed navbar */
-    width: 100%;
+    width: 90%;
     max-width: 800px;
     padding: 20px;
     background-color: #222; /* Darker background for content area */
@@ -98,9 +101,7 @@ ul li strong {
     color: #888;
     text-align: center;
     padding: 15px 0;
-    margin-top: 20px;
-    position: fixed;
-    bottom: 0;
+    position: relative; /* Positioned after main content */
 }
 
 /* Profile Image styling */
@@ -154,9 +155,7 @@ ul li strong {
 .contact-links {
     display: flex;
     justify-content: center;
-    position: fixed;
-    bottom: 60px; /* Adjust to stay above the footer */
-    width: 100%;
+    margin-top: 20px;
 }
 
 .contact-links img {
