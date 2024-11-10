@@ -8,25 +8,27 @@
 /* Body styling */
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: #333;
     background-color: #f4f4f9;
+    color: #333;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-/* Navigation Styling */
+/* Navbar styling */
 .navbar {
+    position: fixed;
+    top: 0;
     width: 100%;
-    background: #0073e6;
+    background-color: #0073e6;
     padding: 10px;
+    text-align: center;
 }
 
 .navbar ul {
+    list-style-type: none;
     display: flex;
     justify-content: center;
-    list-style: none;
 }
 
 .navbar ul li {
@@ -37,37 +39,33 @@ body {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
-    transition: color 0.3s;
 }
 
 .navbar ul li a:hover {
     color: #ccc;
 }
 
-/* Section Styling */
+/* Section styling */
 .section {
     width: 90%;
     max-width: 800px;
     background: white;
-    margin: 20px 0;
+    margin: 80px 0 20px; /* Space for fixed navbar */
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* Profile Section */
-.profile {
     text-align: center;
-    animation: fadeIn 2s ease-in-out;
 }
 
+/* Profile image styling */
 .profile-img {
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
     margin-bottom: 10px;
 }
 
+/* Summary and Tagline animations */
 .headline {
     font-size: 1.5em;
     color: #0073e6;
@@ -83,12 +81,6 @@ body {
     opacity: 0;
 }
 
-/* Keyframes for Animations */
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-
 @keyframes slideIn {
     from { transform: translateY(-20px); opacity: 0; }
     to { transform: translateY(0); opacity: 1; }
@@ -99,15 +91,33 @@ body {
     to { opacity: 1; }
 }
 
-/* Project Images */
-.project-img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
+/* Contact links styling */
+.contact-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.contact-links img {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.contact-links img:hover {
+    transform: scale(1.1);
+}
+
+/* Section images */
+.section-img {
+    width: 60px;
+    height: 60px;
     margin-bottom: 10px;
 }
 
-/* Footer */
+/* Footer styling */
 .footer {
     margin-top: 20px;
     text-align: center;
