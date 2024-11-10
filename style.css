@@ -99,8 +99,8 @@ body {
 }
 
 .contact-links img {
-    width: 30px;
-    height: 30px;
+    width: 10px;
+    height: 10px;
     margin: 0 10px;
     cursor: pointer;
     transition: transform 0.3s;
@@ -112,8 +112,8 @@ body {
 
 /* Section images */
 .section-img {
-    width: 60px;
-    height: 60px;
+    width: 10px;
+    height: 10px;
     margin-bottom: 10px;
 }
 
