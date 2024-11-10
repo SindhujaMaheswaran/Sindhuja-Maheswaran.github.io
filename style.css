@@ -13,6 +13,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    min-height: 100vh;
 }
 
 /* Header (Navigation Bar) */
@@ -23,6 +24,7 @@ body {
     text-align: center;
     position: fixed;
     top: 0;
+    z-index: 1000;
 }
 
 .navbar ul {
@@ -39,35 +41,68 @@ body {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
-    padding: 10px;
+    transition: color 0.3s;
 }
 
 .navbar ul li a:hover {
     color: #ccc;
 }
 
-/* Main Content Section */
+/* Main content sections */
 .main-content {
     width: 90%;
     max-width: 800px;
-    text-align: center;
-    margin-top: 80px; /* Space for fixed navbar */
+    background: white;
+    margin-top: 80px; /* Space for the fixed navbar */
     padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
 }
 
+h2 {
+    color: #0073e6;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+h3 {
+    color: #0073e6;
+    font-size: 1.4em;
+    margin-top: 20px;
+}
+
+/* List styling */
+ul {
+    margin-left: 20px;
+    padding-left: 15px;
+    list-style-type: disc;
+}
+
+ul li {
+    margin: 8px 0;
+    line-height: 1.5;
+}
+
+/* Profile Image */
 .profile-img {
-    width: 100px; /* Set the size of the profile image */
+    width: 100px;
     height: 100px;
     border-radius: 50%;
     margin-bottom: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Summary and Tagline animations */
 .headline {
     font-size: 1.5em;
     color: #0073e6;
-    margin: 10px 0;
+    text-align: center;
+    margin-top: 10px;
     animation: slideIn 2s ease-out forwards;
     opacity: 0;
 }
@@ -75,6 +110,7 @@ body {
 .tagline {
     font-size: 1.1em;
     color: #555;
+    text-align: center;
     margin-top: 5px;
     animation: fadeInText 3s ease-in forwards;
     opacity: 0;
@@ -90,26 +126,15 @@ body {
     to { opacity: 1; }
 }
 
-/* Footer with Contact Icons */
-.footer {
-    width: 100%;
-    text-align: center;
-    margin-top: 20px;
-    padding: 15px;
-    background-color: #f1f1f1;
-    color: #888;
-    position: fixed;
-    bottom: 0;
-}
-
+/* Contact links styling */
 .contact-links {
     display: flex;
     justify-content: center;
-    margin-bottom: 10px;
+    margin-top: 15px;
 }
 
 .contact-links img {
-    width: 25px; /* Adjusted size for contact icons */
+    width: 25px;
     height: 25px;
     margin: 0 10px;
     cursor: pointer;
@@ -118,4 +143,32 @@ body {
 
 .contact-links img:hover {
     transform: scale(1.1);
+}
+
+/* Footer styling */
+.footer {
+    width: 100%;
+    background-color: #f1f1f1;
+    color: #888;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 20px;
+    position: fixed;
+    bottom: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .navbar ul {
+        flex-direction: column;
+        padding: 0;
+    }
+    
+    .navbar ul li {
+        margin: 10px 0;
+    }
+    
+    .main-content {
+        width: 95%;
+    }
 }
