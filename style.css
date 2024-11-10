@@ -136,8 +136,8 @@ h2 {
 
 /* Different colors for each skill category */
 .skills-columns div:nth-child(1) {
-    background-color: #00aaff;
-    color: #00ffcc;
+    background-color: #1a1a1a;
+    color: ##00aaff;
 }
 
 .skills-columns div:nth-child(2) {
