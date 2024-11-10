@@ -71,68 +71,37 @@
             font-size: 2.5em;
             color: #00aaff; /* Light blue for contrast */
             margin: 10px 0;
-            opacity: 0;
-            animation: fadeInSlide 2s forwards; /* Combined fade and slide animation */
         }
 
-        /* Tagline styling with animation delays */
+        /* Tagline styling */
         .tagline {
             font-size: 1.2em;
             color: #ccc;
             margin-top: 10px;
-            opacity: 0;
-            animation: fadeInTagline 2s forwards;
         }
 
-        .tagline-1 {
-            animation-delay: 1s;
-        }
-
-        .tagline-2 {
-            animation-delay: 2s;
-        }
-
-        /* Animations */
-        @keyframes fadeInSlide {
-            from {
-                opacity: 0;
-                transform: translateY(-20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        @keyframes fadeInTagline {
-            from {
-                opacity: 0;
-            }
-            to {
-                opacity: 1;
-            }
-        }
-
-        /* Contact links styling */
-        .contact-links {
+        /* Contact information styling */
+        .contact-info {
             display: flex;
-            justify-content: center;
-            position: fixed;
-            bottom: 20px;
-            width: 100%;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 30px;
         }
 
-        .contact-links img {
-            width: 30px;
-            height: 30px;
-            margin: 0 10px;
-            cursor: pointer;
-            transition: transform 0.3s;
-            filter: brightness(0) invert(1); /* Invert icons for contrast */
+        .contact-info a {
+            color: #00aaff;
+            font-weight: bold;
+            text-decoration: none;
+            margin: 5px 0;
         }
 
-        .contact-links img:hover {
-            transform: scale(1.1);
+        .contact-info a:hover {
+            color: #ddd;
+        }
+
+        .contact-info p {
+            margin: 5px 0;
+            color: #ccc;
         }
     </style>
 </head>
@@ -151,21 +120,18 @@
 
     <!-- Full-Page Home Content -->
     <main class="main-content">
-        <div class="profile">
-            <h1 class="headline">Sindhuja Maheswaran</h1>
-            <p class="tagline tagline-1">Master of Applied Data Science | Data Analyst | Machine Learning Enthusiast</p>
-            <p class="tagline tagline-2">Passionate about transforming data into actionable insights to drive impactful decisions.</p>
+        <h1 class="headline">Sindhuja Maheswaran</h1>
+        <p class="tagline">Master of Applied Data Science | Data Analyst | Machine Learning Enthusiast</p>
+        <p class="tagline">Passionate about transforming data into actionable insights to drive impactful decisions.</p>
+        
+        <!-- Contact Information -->
+        <div class="contact-info">
+            <p>Email: sindhu.m2211@gmail.com</p>
+            <p>Phone: 315-450-9688</p>
+            <a href="https://github.com/SindhujaMaheswaran" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/sindhuja-maheswaran" target="_blank">LinkedIn</a>
         </div>
     </main>
 
-    <!-- Contact Links Fixed at Bottom -->
-    <div class="contact-links">
-        <a href="mailto:smaheswa@syr.edu"><img src="gmail.jpg" alt="gmail"></a>
-        <a href="https://outlook.live.com" target="_blank"><img src="outlook.jpg" alt="outlook"></a>
-        <a href="https://www.linkedin.com/in/sindhuja-maheswaran" target="_blank"><img src="LinkedIn.jpg" alt="LinkedIn"></a>
-        <a href="https://github.com/SindhujaMaheswaran" target="_blank"><img src="github.jpg" alt="GitHub"></a>
-    </div>
-
 </body>
 </html>
-
