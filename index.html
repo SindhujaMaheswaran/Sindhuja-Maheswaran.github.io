@@ -15,8 +15,8 @@
         /* Body styling with black background */
         body {
             font-family: Arial, sans-serif;
-            background-color: #000; /* Black background */
-            color: #fff; /* White text for contrast */
+            background-color: #000;
+            color: #fff;
             min-height: 100vh;
             display: flex;
             flex-direction: column;
@@ -26,7 +26,7 @@
         /* Header (Navigation Bar) */
         .navbar {
             width: 100%;
-            background-color: #333; /* Dark gray for contrast */
+            background-color: #333;
             padding: 10px 0;
             text-align: center;
             position: fixed;
@@ -57,11 +57,11 @@
 
         /* Full-page Main Content */
         .main-content {
-            min-height: 100vh; /* Full viewport height */
+            min-height: 100vh;
             display: flex;
             flex-direction: column;
-            justify-content: center; /* Center content vertically */
-            align-items: center; /* Center content horizontally */
+            justify-content: center;
+            align-items: center;
             text-align: center;
             padding: 20px;
         }
@@ -72,13 +72,13 @@
             height: 100px;
             border-radius: 30%;
             margin-bottom: 10px;
-            box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.3); /* Light shadow */
+            box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.3);
         }
 
         /* Headline Styling */
         .headline {
             font-size: 2.5em;
-            color: #00aaff; /* Light blue for contrast */
+            color: #00aaff;
             margin: 10px 0;
         }
 
@@ -87,6 +87,19 @@
             font-size: 1.2em;
             color: #ccc;
             margin-top: 10px;
+        }
+
+        /* About Me Section (Initially Hidden) */
+        .about-me {
+            display: none;
+            margin-top: 20px;
+            max-width: 600px;
+            font-size: 1em;
+            text-align: center;
+            color: #ddd;
+            background-color: #222;
+            padding: 15px;
+            border-radius: 8px;
         }
 
         /* Footer Contact Links Styling */
@@ -112,17 +125,29 @@
             color: #ddd;
         }
     </style>
+    <script>
+        // Function to toggle About Me section visibility
+        function toggleAboutMe() {
+            const aboutMeSection = document.getElementById("aboutMe");
+            if (aboutMeSection.style.display === "none" || aboutMeSection.style.display === "") {
+                aboutMeSection.style.display = "block";
+            } else {
+                aboutMeSection.style.display = "none";
+            }
+        }
+    </script>
 </head>
 <body>
 
     <!-- Header with Navigation Links -->
     <header class="navbar">
         <ul>
-          <li><a href="index.html">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="certifications.html">Education/Experience</a></li>
             <li><a href="experience.html">Coursework</a></li>
             <li><a href="projects.html">Projects</a></li>
-            <li><a href="skills.html">Blog</a></li
+            <li><a href="skills.html">Blog</a></li>
+            <li><a href="#" onclick="toggleAboutMe()">About Me</a></li>
         </ul>
     </header>
 
@@ -132,8 +157,13 @@
             <!-- Profile Image with Headline and Tagline -->
             <img src="Profile.jpeg" alt="Sindhuja Maheswaran" class="profile-img">
             <h1 class="headline">Sindhuja Maheswaran</h1>
-            <p class="tagline tagline-1">Master of Applied Data Science | Data Analyst | Machine Learning Enthusiast</p>
-            <p class="tagline tagline-2">Passionate about transforming data into actionable insights to drive impactful decisions.</p>
+            <p class="tagline">Master of Applied Data Science | Data Analyst | Machine Learning Enthusiast</p>
+            <p class="tagline">Passionate about transforming data into actionable insights to drive impactful decisions.</p>
+        </div>
+
+        <!-- About Me Section -->
+        <div id="aboutMe" class="about-me">
+            <p>I am a data science professional with a Master’s in Applied Data Science from Syracuse University, skilled in data analytics, machine learning, and statistical modeling. With hands-on experience as a Data Science Researcher, I led a scalable recommender system project that boosted user engagement by 20% and improved system reliability by 15%. My background as a Data Analyst in healthcare sharpened my ability to derive actionable insights and optimize reporting processes, enhancing data-driven decision-making by 40%. I bring a strong blend of technical knowledge, project leadership, and cross-functional collaboration to drive impactful, data-centered solutions.</p>
         </div>
     </main>
 
