@@ -12,10 +12,11 @@
             box-sizing: border-box;
         }
 
-        /* Body styling with black background */
+        /* Body styling with background image */
         body {
             font-family: Arial, sans-serif;
-            background-color: #000;
+            background: url('syracuse_university.jpg') no-repeat center center fixed;
+            background-size: cover; /* Makes the image cover the entire background */
             color: #fff;
             min-height: 100vh;
             display: flex;
@@ -26,7 +27,7 @@
         /* Header (Navigation Bar) */
         .navbar {
             width: 100%;
-            background-color: #333;
+            background-color: rgba(51, 51, 51, 0.8); /* Semi-transparent background */
             padding: 10px 0;
             text-align: center;
             position: fixed;
@@ -64,6 +65,8 @@
             align-items: center;
             text-align: center;
             padding: 20px;
+            background-color: rgba(0, 0, 0, 0.6); /* Dark overlay for readability */
+            width: 100%;
         }
 
         /* Profile Image */
@@ -111,7 +114,7 @@
             position: fixed;
             bottom: 20px;
             width: 100%;
-            background-color: #333;
+            background-color: rgba(51, 51, 51, 0.8); /* Semi-transparent for readability */
         }
 
         .contact-info a, .contact-info p {
